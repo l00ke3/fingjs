@@ -26,7 +26,8 @@
   // Get the visitor identifier when you need it.
   fpPromise
     .then(fp => fp.get())
-    .then(result => console.log(result.visitorId));
+    //.then(result => console.log(result.visitorId))
+    .then(result =>result.visitorId=result.visitorId);
         
     document.getElementById('average').innerHTML = result.visitorId;
     //.then(result => document.write(result.visitorId));
