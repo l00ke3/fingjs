@@ -26,14 +26,16 @@
   // Get the visitor identifier when you need it.
   fpPromise
     .then(fp => fp.get())
-    //.then(result => console.log(result.visitorId))
-    .then(result =>result.visitorId=result.visitorId);
+    .then(result => console.log(result.visitorId))
+    //.then(result =>result.visitorId=result.visitorId);
         
-    document.getElementById('average').innerHTML = result.visitorId;
-    //.then(result => document.write(result.visitorId));
+    //
+    .then(result => document.write(result.visitorId));
+    visitorId = await (await FingerprintJS.load()).get();
+    document.getElementById('average').innerHTML = visitorId;
 </script>
   <a>
-    <input value=result.visitorId>
+    <input value=visitorId>
 
 
     <div></div>
