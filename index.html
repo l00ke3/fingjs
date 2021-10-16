@@ -30,13 +30,14 @@
         // This is the visitor identifier:
         const visitorId = result.visitorId
         console.log(visitorId)
+        document.getElementById('ress').innerHTML = visitorId
       })
     //.then(result =>result.visitorId=result.visitorId);
         
     //
   //  .then(result => document.write(result.visitorId));
     //visitorId = await (await FingerprintJS.load({token: 'VjVZSjsHEaYnBmwjjYVG'})).get();
-    document.getElementById('ress').innerHTML = visitorId;
+    
 </script>
   <a>
     <input id="ress" value=visitorId>
