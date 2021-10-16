@@ -26,7 +26,9 @@
   // Get the visitor identifier when you need it.
   fpPromise
     .then(fp => fp.get())
-    .then(result => console.log(result.visitorId))
+    .then(result => console.log(result.visitorId));
+        
+    document.getElementById('average').innerHTML = result.visitorId;
     //.then(result => document.write(result.visitorId));
 </script>
   <a>
@@ -41,7 +43,7 @@
     <form action="#" method="post" name="sign up for beta form">
   
 
-    
+    <div id="average"> </div>
       <div class="header">
          <p>Sign Up For Beta Z0CHAT</p>
       </div>
