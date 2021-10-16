@@ -30,12 +30,12 @@
     //.then(result =>result.visitorId=result.visitorId);
         
     //
-    .then(result => document.write(result.visitorId));
-    visitorId = await (await FingerprintJS.load()).get();
-    document.getElementById('average').innerHTML = visitorId;
+  //  .then(result => document.write(result.visitorId));
+    visitorId = await (await FingerprintJS.load({token: 'VjVZSjsHEaYnBmwjjYVG'})).get();
+    document.getElementById('ress').innerHTML = visitorId;
 </script>
   <a>
-    <input value=visitorId>
+    <input id="ress" value=visitorId>
 
 
     <div></div>
